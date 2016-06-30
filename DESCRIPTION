@@ -1,0 +1,12 @@
+Package: BrainCell
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person("Andree", "Delahaye-Duriez", email = "a.delahaye-duriez@imperial.ac.uk", role = c("aut", "cre"))
+Description: The BrainCell R package provides functions to test query gene sets (1) representing their expression pattern a across brain regions during development and post-natal life, (2) representing their expression pattern also across cortical cell types, (3) testing the enrichment for brain cell type marker genes, and (4) testing enrichment for deleterious de novo mutations ascertained from patients with neurodevelopmental disorders. 
+Depends: R (>= 3.2.3)
+License: 
+Encoding: UTF-8
+LazyData: true
+Imports: gplots,
+    parallel,
+    ggplot2
