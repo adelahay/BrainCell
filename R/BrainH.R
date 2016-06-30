@@ -1,4 +1,6 @@
-BrainH <- function(clusterslist,outpath=getwd(),runName=""){   
+BrainH <- function(clusterslist,outpath=getwd(),runName=""){  
+  
+  NfuGSE25219=rbind(NfuGSE25219_1,NfuGSE25219_2)
   
   if (!requireNamespace("gplots", quietly = TRUE)) {
   stop("gplots needed for this function to work. Please install it.",
