@@ -11,7 +11,7 @@ BrainH <- function(clusterslist,outpath=getwd(),runName=""){
   #load(paste0(inpath,'/GSE25219forHeatmap_GSM.Rdata')) #GSM
 
 
-  pdf(file = paste(outpath,"/",runName,"_BainHeatmap.pdf",sep=""), paper="a4r", width = 10)
+  pdf(file = paste(outpath,"/",runName,"_BrainHeatmap.pdf",sep=""), paper="a4r", width = 10)
   for (i in 1:length(clusterslist)){
     NAmat <- matrix(data=as.numeric(NA),nrow=nrow(GSM),ncol=ncol(GSM),dimnames= dimnames(GSM))
       ME.av = function(mat,data){
