@@ -2,7 +2,7 @@
 
 
 
-CellTax <- function(clusterlist,outpath=getwd(),runName=""){
+CellTax <- function(clusterslist,outpath=getwd(),runName=""){
   if (!requireNamespace("gplots", quietly = TRUE)) {
     stop("gplots needed for this function to work. Please install it.",
       call. = FALSE)
@@ -12,8 +12,8 @@ CellTax <- function(clusterlist,outpath=getwd(),runName=""){
 
   pdf(file = paste0(outpath,"/",runName,"_CellTaxonomyHeatmap.pdf"), paper="a4", width = 10,height=15)
 
-  for (i in 1:length(clusterlist)){
-    inter=intersect(clusterlist[[i]],rownames(cellexH))
+  for (i in 1:length(clusterslist)){
+    inter=intersect(clusterslist[[i]],rownames(cellexH))
     sel=cellex.an[cellex.an[,"hsapiens_homolog_ensembl_gene"]%in%inter,]
     selH=sel[,c(2:1810)]
     rownames(selH)=sel[,"external_gene_name.y"]
@@ -27,7 +27,7 @@ CellTax <- function(clusterlist,outpath=getwd(),runName=""){
       mats=mats[-which(is.na(mats[,2])==T),]
       }    
     heatmap.2(mats,
-              main= names(clusterlist)[i],
+              main= names(clusterslist)[i],
               Colv=NULL,
               scale="none",
               dendogram="row",
