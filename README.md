@@ -13,9 +13,6 @@ The BrainCell R package provides functions to test query gene sets in the contex
      
   <i>DNMFET</i>  
   tests gene sets for enrichment in deleterious <i>de novo</i> mutations ascertained from patients with neurodevelopmental disorders  
-     
-  <i>forest.plot</i>  
-  plots the results of <i>CellFET</i> and <i>DNMFET</i> functions
 
 
 #### Installation
