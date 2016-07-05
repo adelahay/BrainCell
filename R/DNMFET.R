@@ -1,6 +1,6 @@
 
 
-DNMFET <- function(clusterslist,runname="",selection=F){ 
+DNMFET <- function(clusterslist,runName=""){ 
   if (!requireNamespace("parallel", quietly = TRUE)) {
   stop("parallel needed for this function to work. Please install it.",
     call. = FALSE)

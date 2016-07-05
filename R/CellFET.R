@@ -1,4 +1,4 @@
-CellFET <- function(clusterslist,runname="",outpath=getwd()){	#inpath="~/Dropbox/SHARED/tools/Data_to_load_CellFET",
+CellFET <- function(clusterslist,runName=""){	#inpath="~/Dropbox/SHARED/tools/Data_to_load_CellFET",
 
 #cat("Cell background is the genes with one2one human orthologous of mice genes used to build the list of cell class enriched genes by Zeisel et al 2015(Science)")
 
