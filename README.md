@@ -30,8 +30,6 @@ In addition to this, you would need to install all package dependencies. They ar
     #Installing from CRAN
     install.packages("gplots")  
     library('gplots')
-    install.packages("ggplot2")
-    library('ggplot2')
     install.packages("parallel")
     library('parallel')
     
