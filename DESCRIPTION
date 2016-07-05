@@ -8,5 +8,4 @@ License:
 Encoding: UTF-8
 LazyData: true
 Imports: gplots,
-    parallel,
-    ggplot2
+    parallel
