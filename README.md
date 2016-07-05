@@ -8,7 +8,7 @@ The BrainCell R package provides functions to test query gene sets in the contex
      
   <i>CellFET</i> tests gene sets for enrichment in brain cell type marker genes for Ependymal cells, Oligodendrocytes, Microglial cells, Pyramidal neurons from CA1 area, Interneuron, Endothelial cells, Pyramidal neurons from S1 area, Astrocytes and Mural cells (as designated by [Zeisel et al.](http://www.ncbi.nlm.nih.gov/pubmed/25700174))  
      
-  <i>DNMFET</i> tests gene sets for enrichment in deleterious <i>de novo</i> mutations ascertained from patients with neurodevelopmental disorders (EE= Epileptic Encephalopathy, ASD= Autism Spectrum Disorder, ID=Intellectual Disability, SCZ= Schizophrenia, combined= EE+ASD+ID+SCZ, DDD= Developmental disorder from the DDD study) as previously described by [Johnson et al.](http://www.ncbi.nlm.nih.gov/pubmed/26691832)  
+  <i>DNMFET</i> tests gene sets for enrichment in deleterious <i>de novo</i> mutations ascertained from patients with neurodevelopmental disorder (EE= Epileptic Encephalopathy, ASD= Autism Spectrum Disorder, ID=Intellectual Disability, SCZ= Schizophrenia, combined= EE+ASD+ID+SCZ, DDD= Developmental disorder from the DDD study) as previously described by [Johnson et al.](http://www.ncbi.nlm.nih.gov/pubmed/26691832)  
 
 
 #### Installation
