@@ -2,17 +2,13 @@
 
 The BrainCell R package provides functions to test query gene sets in the context of brain and neurodevelopment
      
-  <i>BrainH</i>  
-  represents gene sets expression pattern across brain regions during development and post-natal life. The acronyms for brain regions and numeration of lifetime periods as previously designated by [Kang et al](http://www.ncbi.nlm.nih.gov/pubmed/22031440) is used to label the heatmaps.  
+  <i>BrainH</i> represents gene sets expression pattern across brain regions during development and post-natal life. The acronyms for brain regions and numeration of lifetime periods as previously designated by [Kang et al.](http://www.ncbi.nlm.nih.gov/pubmed/22031440) is used to label the heatmaps.  
      
-  <i>CellTax</i>  
-  represents gene sets expression pattern across cortical cell types using the [GSE71585 dataset](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585). The cell type nomenclature as designated by [Tasic et al](http://www.ncbi.nlm.nih.gov/pubmed/26727548) is used to label the heatmaps.   
+  <i>CellTax</i> represents gene sets expression pattern across cortical cell types using the [GSE71585 dataset](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585). The cell type nomenclature as designated by [Tasic et al.](http://www.ncbi.nlm.nih.gov/pubmed/26727548) is used to label the heatmaps.   
      
-  <i>CellFET</i>  
-  tests gene sets for enrichment in brain cell type marker genes for Ependymal cells, Oligodendrocytes, Microglial cells, Pyramidal neurons from CA1 area, Interneuron, Endothelial cells, Pyramidal neurons from S1 area, Astrocytes and Mural cells (as designated by [Zeisel et al](http://www.ncbi.nlm.nih.gov/pubmed/25700174)).  
+  <i>CellFET</i> tests gene sets for enrichment in brain cell type marker genes for Ependymal cells, Oligodendrocytes, Microglial cells, Pyramidal neurons from CA1 area, Interneuron, Endothelial cells, Pyramidal neurons from S1 area, Astrocytes and Mural cells (as designated by [Zeisel et al.](http://www.ncbi.nlm.nih.gov/pubmed/25700174)).  
      
-  <i>DNMFET</i>  
-  tests gene sets for enrichment in deleterious <i>de novo</i> mutations ascertained from patients with neurodevelopmental disorders (EE= Epileptic Encephalopathies, ASD= Autism Spectrum Disorders, ID=Intellectual Disabilities, SCZ= Schizophrenia, combined= EE+ASD+ID+SCZ, DDD= Developmental disorders from the DDD study) as previously described by [Johnson et al](http://www.ncbi.nlm.nih.gov/pubmed/26691832).  
+  <i>DNMFET</i> tests gene sets for enrichment in deleterious <i>de novo</i> mutations ascertained from patients with neurodevelopmental disorders (EE= Epileptic Encephalopathies, ASD= Autism Spectrum Disorders, ID=Intellectual Disabilities, SCZ= Schizophrenia, combined= EE+ASD+ID+SCZ, DDD= Developmental disorders from the DDD study) as previously described by [Johnson et al.](http://www.ncbi.nlm.nih.gov/pubmed/26691832)  
 
 
 #### Installation
@@ -25,7 +21,7 @@ You can install the BrainCell package from github.
     install_github("adelahay/BrainCell")
     library(BrainCell)
     
-In addition to this, you would need to install all package dependencies. They are downloadable from CRAN (http://cran.r-project.org).
+In addition to this, you would need to install all package dependencies. They are downloadable from CRAN (http://cran.r-project.org)
 
     install.packages("gplots")  
     library('gplots')
@@ -53,25 +49,23 @@ If we create a new folder "/BrainCellH_test_outputs" for outputs and save its pa
 
      system(paste0("mkdir ",getwd(),"/BrainCellH_test_outputs"))
      testpath=paste0(getwd(),"/BrainCellH_test_outputs")
-     
-Now when we run the BrainCell functions
+
+We run the BrainCell functions
 
      BrainH(clusterslist = CLtest, outpath = testpath, runName = "test")
 
-<i>BrainH</i> function produces a pdf [test_BrainHeatmap.pdf](https://github.com/adelahay/BrainCell/blob/master/BrainCellH_test_outputs/test_BainHeatmap.pdf).
+<i>BrainH</i> function produces a pdf [test_BrainHeatmap.pdf](https://github.com/adelahay/BrainCell/blob/master/BrainCellH_test_outputs/test_BainHeatmap.pdf)
 
 
      CellTax(clusterslist = CLtest, outpath = testpath, runName = "test")
 
-<i>CellTax</i> function produces a pdf [test_CellTaxonomyHeatmap.pdf](https://github.com/adelahay/BrainCell/blob/master/BrainCellH_test_outputs/test_CellTaxonomyHeatmap.pdf). 
+<i>CellTax</i> function produces a pdf [test_CellTaxonomyHeatmap.pdf](https://github.com/adelahay/BrainCell/blob/master/BrainCellH_test_outputs/test_CellTaxonomyHeatmap.pdf) 
      
 
      resC=CellFET(clusterslist = CLtest, runName = "test")
      resD=DNMFET(clusterslist = CLtest, runName = "test")
 
-<i>CellFET</i> and <i>DNMFET</i> functions need to be adressed to a results R object (here, resC and resD). These results R objects are a list of matrices:   
-  with one matrice for each cell type tested in <i>CellFET</i> function  
-  with one matrice for each phenotype tested in <i>DNMFET</i> function  
+<i>CellFET</i> and <i>DNMFET</i> functions need to be adressed to a results R object (here, resC and resD). These results R objects are a list of matrices with one matrice for each cell type tested in <i>CellFET</i> function, and for each phenotype tested in <i>DNMFET</i> function.  
    
 
 The following code will produce .txt files to have a overview of the results: [test_cellFET.txt](https://github.com/adelahay/BrainCell/blob/master/BrainCellH_test_outputs/test_cellFET.txt) and [test_DNMFET.txt](https://github.com/adelahay/BrainCell/blob/master/BrainCellH_test_outputs/test_DNMFET.txt)  
