@@ -6,7 +6,7 @@ The BrainCell R package provides functions to test query gene sets in the contex
      
   <i>CellTax</i> represents gene sets expression pattern across cortical cell types using the [GSE71585 dataset](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585). The cell type nomenclature as designated by [Tasic et al.](http://www.ncbi.nlm.nih.gov/pubmed/26727548) is used to label the heatmaps.   
      
-  <i>CellFET</i> tests gene sets for enrichment in brain cell type marker genes for Ependymal cells, Oligodendrocytes, Microglial cells, Pyramidal neurons from CA1 area, Interneuron, Endothelial cells, Pyramidal neurons from S1 area, Astrocytes and Mural cells (as designated by [Zeisel et al.](http://www.ncbi.nlm.nih.gov/pubmed/25700174)).  
+  <i>CellFET</i> tests gene sets for enrichment in brain cell type marker genes for Ependymal cells, Oligodendrocytes, Microglial cells, Pyramidal neurons from CA1 area, Interneuron, Endothelial cells, Pyramidal neurons from S1 area, Astrocytes and Mural cells (as designated by [Zeisel et al.](http://www.ncbi.nlm.nih.gov/pubmed/25700174))  
      
   <i>DNMFET</i> tests gene sets for enrichment in deleterious <i>de novo</i> mutations ascertained from patients with neurodevelopmental disorders (EE= Epileptic Encephalopathies, ASD= Autism Spectrum Disorders, ID=Intellectual Disabilities, SCZ= Schizophrenia, combined= EE+ASD+ID+SCZ, DDD= Developmental disorders from the DDD study) as previously described by [Johnson et al.](http://www.ncbi.nlm.nih.gov/pubmed/26691832)  
 
