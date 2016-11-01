@@ -88,6 +88,6 @@ The following code will produce .txt files to have a overview of the results: [t
 
 #### Citation
 
-Please cite [link to complete](http://dx.doi.org/)
+Please cite [Delahaye et al. 2016 Genome Biology (link to complete)](http://dx.doi.org/)
 
 
