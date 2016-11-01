@@ -90,4 +90,6 @@ The following code will produce .txt files to have a overview of the results: [t
 
 Please cite [Delahaye et al. 2016 Genome Biology (link to complete)](http://dx.doi.org/)
 
+[![DOI](https://zenodo.org/badge/62316752.svg)](https://zenodo.org/badge/latestdoi/62316752)
+
 
