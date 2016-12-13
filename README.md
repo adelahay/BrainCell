@@ -88,7 +88,7 @@ The following code will produce .txt files to have a overview of the results: [t
 
 #### Citation
 
-Please cite [Delahaye et al. 2016 Genome Biology (link to complete)](http://dx.doi.org/)
+Please cite [Delahaye-Duriez et al. 2016 Genome Biology](http://dx.doi.org/10.1186/s13059-016-1097-7)
 
 [![DOI](https://zenodo.org/badge/62316752.svg)](https://zenodo.org/badge/latestdoi/62316752)
 
